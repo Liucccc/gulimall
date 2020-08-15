@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gulimall-product
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: f9014c65-b054-4cee-9f34-44b045648618
+        group: DEV_GROUP
+#        ext-config:
+#          - data-id: mysql-gulimall_sms.yml
+#            group: MYSQL_DEV_GROUP
+#            refresh: true
+        extension-configs:
+          - data-id: mysql-gulimall_pms.yml
+            group: MYSQL_DEV_GROUP
+            refresh: true
