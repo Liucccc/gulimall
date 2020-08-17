@@ -36,7 +36,6 @@ public class CategoryController {
     @RequestMapping("/list/tree")
     public R list() {
         List<CategoryEntity> list = categoryService.listWithTree();
-
         return R.ok().put("data", list);
     }
 
