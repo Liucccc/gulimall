@@ -37,9 +37,16 @@ spring:
         min-idle: 5       # 连接池中的最小空闲连接
   mvc:
     throw-exception-if-no-handler-found: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.99.172.188:8848
+        namespace: f4afe9a5-925e-407b-b008-15700cb65bda
+  application:
+    name: renren-fast
+
 #  resources:
 #    add-mappings: false
-
 
 #mybatis
 mybatis-plus:

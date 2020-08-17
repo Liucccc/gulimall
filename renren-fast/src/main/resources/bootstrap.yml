@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: renren-fast
+  cloud:
+    nacos:
+      config:
+        server-addr: 39.99.172.188:8848
+        file-extension: yml
+        namespace: f4afe9a5-925e-407b-b008-15700cb65bda
+        group: DEV_GROUP
+        extension-configs:
+          - data-id: mysql-gulimall-admin.yml
+            group: MYSQL_DEV_GROUP
+            refresh: true
